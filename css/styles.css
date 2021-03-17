@@ -1,0 +1,248 @@
+:root {
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --header-bg-color: #ffffff;
+  --hero-bg-color: #2f303a;
+  --body-bg-color: #e5e5e5;
+  --accent-color: #2196f3;
+  --logo-dark-color: #000000;
+  --filter-button-bg-color: #f5f4fa;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--header-bg-color);
+  color: var(--main-text-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+address {
+  font-style: inherit;
+}
+
+.button {
+  display: inline-block;
+  border: transparent;
+  font-family: inherit;
+  font-style: inherit;
+  background-color: var(--accent-color);
+  color: var(--header-bg-color);
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+/*logo header and footer*/
+.logo-webstudio {
+  margin-right: auto;
+  text-decoration: none;
+  font-family: Raleway;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+.logo-studio {
+  color: var(--logo-dark-color);
+}
+.footer-studio {
+  color: var(--header-bg-color);
+}
+/*Header*/
+.header {
+  background-color: var(--header-bg-color);
+}
+.header-section {
+  outline: 2px solid tomato;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  margin: 0;
+}
+.nav-links a {
+  font-family: Roboto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--accent-color);
+}
+.contacts {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+.contacts a {
+  font-weight: 500;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--accent-color);
+}
+.nav-links .current {
+  color: var(--accent-color);
+}
+/*hero*/
+.hero-section {
+  background-color: var(--hero-bg-color);
+}
+.hero {
+  display: inline-block;
+  align-items: center;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-title {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--header-bg-color);
+}
+
+/*our peculiarities*/
+.peculiar-list h3 {
+  font-weight: 700;
+
+  line-height: 1.14;
+
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.peculiar-list p {
+  line-height: 1.71;
+
+  color: var(--secondary-text-color);
+}
+/*our activities*/
+.activities-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  color: var(--main-text-color);
+}
+
+/*our team*/
+.team {
+  background-color: var(--body-bg-color);
+}
+
+.team-cards h3,
+.team-cards p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: var(--main-text-color);
+}
+.team-cards p {
+  color: var(--secondary-text-color);
+}
+
+/*portfolio page*/
+
+.portfolio {
+  background-color: var(--header-bg-color);
+}
+
+.filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  color: var(--main-text-color);
+  background-color: var(--filter-button-bg-color);
+}
+.filter:hover,
+.filter:focus {
+  color: var(--header-bg-color);
+  background-color: var(--accent-color);
+}
+.pf-cards h3 {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+
+.pf-cards p {
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: var(--secondary-text-color);
+}
+
+/*footer*/
+
+.footer {
+  background-color: var(--hero-bg-color);
+}
+.foot-studio {
+  color: var(--header-bg-color);
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  color: var(--accent-color);
+}
+.footer-contacts a {
+  font-weight: 400;
+
+  line-height: 1.71;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-adress a {
+  font-weight: 400;
+
+  line-height: 1.71;
+
+  color: var(--header-bg-color);
+}

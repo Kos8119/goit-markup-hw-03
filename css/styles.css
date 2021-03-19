@@ -39,10 +39,14 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 .section {
 }
 .container {
-  outline: 2px solid tomato;
+  /*outline: 2px solid tomato;*/
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -266,7 +270,7 @@ p {
 }
 /*Кнопки-фильтры*/
 .filter-buttons {
-  margin-bottom: 50px;
+  margin-bottom: 34px;
 }
 .filt-btn {
   display: flex;
@@ -294,11 +298,26 @@ p {
 
 /*Краточки портфолио*/
 .pf-cards {
+  /*outline: 1px solid blueviolet;*/
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  margin-left: -30px;
 }
-.pf-cards li {
-  border: 1px solid #eeeeee;
+.pf-cards > li {
+  /*outline: 1px solid tomato;*/
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+
   background-color: var(--header-bg-color);
+}
+
+.pf-card-text {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 .pf-cards h3 {
   text-decoration: none;
@@ -312,7 +331,6 @@ p {
 .pf-cards p {
   font-size: 16px;
   line-height: 1.87;
-
   color: var(--secondary-text-color);
 }
 

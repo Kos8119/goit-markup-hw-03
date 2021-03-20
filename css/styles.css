@@ -162,10 +162,14 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+.hero-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+}
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  padding: 0 237px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -287,7 +291,7 @@ img {
 .filt-btn {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .filt-btn li:not(:last-child) {
   margin-right: 8px;
@@ -333,6 +337,7 @@ img {
 }
 .pf-cards h3 {
   text-decoration: none;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -360,7 +365,7 @@ img {
   color: var(--header-bg-color);
 }
 .f-adress {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .footer-contacts li:not(:last-child) {
